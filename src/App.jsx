@@ -1,19 +1,17 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Order from './components/Order';
 import Success from './components/Success';
 
 function App() {
   return (
-    <>
     <Router>
-      <Switch>
-        <Route exact path="/" component={Header} />
-        <Route exact path="/order" component={Order} />
-        <Route exact path="/success" component={Success} />
-      </Switch>
-      </Router>
-    </>
+      <Routes>
+        <Route path="/" element={<Header />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/success" element={<Success />} />
+      </Routes>
+    </Router>
   );
 }
 
