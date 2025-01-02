@@ -2,9 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.full-kirmizi {
-    @apply bg-kirmizi min-h-screen;
+@layer components {
+  .title {
+    @apply text-white text-3xl sm:text-5xl font-bold font-roboto;
   }
+  .text {
+    @apply text-lg sm:text-2xl text-sari font-satisfy;
+  }
+  .subtitle {
+    @apply text-3xl sm:text-6xl text-koyuGri font-roboto;
+  }
+ 
+}  
 
 @layer base {
   :root {
