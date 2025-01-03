@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Order from './components/Order';
-import Success from './components/Success';
+import Header from './layout/Header';
+import Order from './layout/Order';
+import Success from './layout/Success';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Header />} />
         <Route path="/order" element={<Order />} />
-        <Route path="/success" element={<Success />} />
+        <Route path="/success" element={<Success />} />  
       </Routes>
     </Router>
   );

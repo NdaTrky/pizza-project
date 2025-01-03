@@ -4,7 +4,7 @@
 
 @layer components {
   .title {
-    @apply text-white text-3xl sm:text-5xl font-bold font-roboto;
+    @apply text-white text-3xl sm:text-5xl font-bold font-quattrocento;
   }
   .text {
     @apply text-lg sm:text-2xl text-sari font-satisfy;
