@@ -12,6 +12,34 @@
   .subtitle {
     @apply text-3xl sm:text-6xl text-koyuGri font-roboto;
   }
+  /* cards.jsx */
+.card {
+  @apply relative w-96 rounded-md;
+}
+
+.card-image {
+  @apply w-full h-full rounded-md object-cover;
+}
+
+.card-overlay {
+  @apply absolute inset-0 flex flex-col justify-center items-center text-white;
+}
+
+.card-container {
+  @apply m-2;
+}
+
+.card-bg-red {
+  @apply bg-kirmizi;
+}
+
+.card-bg-gray {
+  @apply bg-koyuGri;
+}
+
+.card-bg-dark {
+  @apply bg-gray-800;
+}
  
 }  
 
