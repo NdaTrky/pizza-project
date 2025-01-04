@@ -129,11 +129,12 @@ function Order() {
           <hr className="mt-10 mb-10 border-acik" />
 
           <div className="flex justify-between p-6">
-            <div className="flex gap-x-2">
-              <Button variant="default" onClick={() => setQuantity(quantity + 1)}>+</Button>
-              <p className="border rounded-md w-10 h-10 text-center">{quantity}</p>
-              <Button variant="default" onClick={() => setQuantity(Math.max(1, quantity - 1))}>-</Button>
-            </div>
+          <div className="flex gap-x-2">
+  <Button type="button" variant="default" onClick={() => setQuantity(quantity + 1)}>+</Button>
+  <p className="border rounded-md w-10 h-10 text-center">{quantity}</p>
+  <Button type="button" variant="default" onClick={() => setQuantity(Math.max(1, quantity - 1))}>-</Button>
+</div>
+
 
             <div className="border rounded-md p-4 w-full max-w-xs text-gray-700">
               <h3 className="font-bold text-xl">Sipariş Toplamı</h3>
