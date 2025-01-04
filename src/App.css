@@ -41,6 +41,9 @@
   @apply bg-gray-800;
 }
  
+.order-size-radio {
+  @apply flex items-center justify-center w-16 h-16 border rounded-full text-center text-sm text-acikGri hover:bg-gray-200 focus:bg-yellow-400 focus:ring-2 focus:ring-yellow-500;
+}
 }  
 
 @layer base {
